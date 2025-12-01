@@ -1,0 +1,30 @@
+:root{
+    --bg:#767bbc;
+    --bgbox:#272525;
+    --bgboxl:#a4aae4;
+    --bgboxs:#3f426b;
+    --text:aliceblue;
+}
+html{
+    background: var(--bg);
+}
+header{
+    color: var(--text);
+    border-radius: 10px;
+    background: #272525;
+box-shadow:  5px 5px 10px #3f426b,
+-5px -5px 10px #a4aae4;
+}
+div{
+    border-radius: 10px;
+    background: #272525;
+    box-shadow: -5px -5px 10px #3f426b,
+    -5px -5px 10px #a4aae4;
+}
+h1{
+    color: aliceblue;
+    border-radius: 10px;
+    background: #272525;
+    box-shadow: -5px -5px 1px #3f426b,
+    -5px -5px 10px #a4aae4;
+}

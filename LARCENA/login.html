@@ -1,0 +1,119 @@
+<hmtl lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,width,initial-scales=1.8">
+    <title>Log In</title>
+    <style>
+        .bg-wheat{
+            background-color: wheat;
+            padding: 10px;
+        }
+        fc-white{
+            color:rgb(255, 153, 0) (2, 59, 59);
+        }
+        form{
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        stop{
+            background-color:wheat (158, 102, 33);
+        }
+        header{
+            background-color: black;
+        }
+        .block{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</header>
+<body>
+<header id="top">
+</header>
+<div class="Welcome">
+</div>
+<section class="bg-wheat fc-white">
+</section>
+<section>
+</section>
+<section>
+    <video src="" controls autoplay muted poster="" width="60%"></video>
+</section>
+<section>
+    <audio src="" controls width="50%"></audio>
+</section>
+<div>
+    <section >
+        <form action="" method="" style="background-color: wheat;">
+            <h1>Login Form</h1>
+            <label for="username">Username: </label><br>
+            <input type="text" name="username" id="username" maxlength="40"> <br>
+            <label for="password">Password: </label><br>
+            <input type="password" name="password" id="password" maxlength="40">
+            <br><br>
+            <input type="button" name="login" id="login" value="Submit" onclick="validate()">
+        </form>
+    </section>
+</div>
+
+    <section>
+        <form action="" method="" style="background-color: thistle;">
+            <h1>Register an account</h1>
+            <label for="">Fullname: </label><br>
+            <input type="text" name="fullname" id="fullname" maxlength="40"> <br>
+            <label for="">EMail: </label><br>
+            <input type="email" name="email" id="email" maxlength="40"><br>
+            <label for="">Gender</label><br>
+            <input type="radio" name="gender" id="gender" value="Male" checked> Male
+            <input type="radio" name="gender" id="gender" value="Female" checked> Female
+            <br>
+            <label for="music">Music: </label>
+            <input type="checkbox" name="service" id="service" value="Spotify"> Spotify
+            <input type="checkbox" name="service" id="service" value="Itunes"> Itunes
+            <input type="checkbox" name="service" id="service" value="Apple"> Apple
+            <br>
+            <label for="">Genre</label>
+            <select name="genre" id="genre">
+                <option value="">~~Select Genre~~</option>
+                <option value="Kpop">Kpop</option>
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+            <br><br>
+            <input type="button" name="Registration" id="Registration" value="Submit" onclick="registration()">
+        </form>
+    </section>
+</body>
+<footer>
+</footer>
+</hmtl>
+<script>
+    function registration(){
+        var fullname = document.getElementById('fullname');
+        var email = document.getElementById('email');
+        var gender = document.querySelector('input[name="gender"]:checked');
+        var service = document.querySelectorAll('input[type="checkbox"]:checked');
+        var genre = document.querySelector('select[name="genre"]');
+        const checkvalues = Array.from(service).map(checkbox => checkbox.value);
+        const joinvalues = checkvalues.join(', ');
+    alert("Information: \n fullname: "+ fullname.value + "\n Email: " 
+    + email.value + "\n Gender: " + gender.value + "\n Service: "+ joinvalues + "\n Genres: " + genre.value);
+    }
+</script>
+<script>
+    function validate(){
+        var username = document.getElementById("username")
+        var username = document.getElementById("password")
+        if(username.value === "SanNicoLarcena" && password.value === "IWantH0ME"){
+            alert("Welcome, homeboy \n Usernname:" + username.value + " \n Password: " + password.value)
+        } else {
+            alert("AP AP AP- That ain't right, bub.")
+        }
+    }
+</script>

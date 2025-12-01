@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg: #0D1164;
+    --tc: #F78D60;
+    --bgbox: #640D5F;
+    --font: #EA2264;
+    
+}
+.rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--bg);
+}
+h1, h2, p{
+    color: brown;
+    font-family: 'Franklin Gothic Medium';
+}
+.note{
+    font-style: oblique;
+    color: blueviolet;
+}
+p.note{
+    color: chocolate;
+}
+.gent{
+    size: 60px;
+}
+.introbox{
+    width: 50%;
+    background-color: var(--bgbox);
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+.introbox:active{
+    list-style: none;
+}
+nav{
+    padding: 50px;
+}
+h1{
+    text-decoration: underline;
+    letter-spacing: 0.53m;
+}
+h1::first-letter{
+    font-size: 10px;
+}
+nav, ul, li{
+    list-style: none;
+}
+li>a:visited{
+    color: var(--tc);
+}
+li a:hover{
+    padding: 50px;
+    margin: 50px;
+}

@@ -1,0 +1,10 @@
+:root{
+    --bg:#767bbc;
+    --bgbox:#272525;
+    --bgboxl:#a4aae4;
+    --bgboxs:#3f426b;
+    --text:aliceblue;
+}
+html{
+    background-color: var(--bg);
+}
