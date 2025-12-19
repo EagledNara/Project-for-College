@@ -25,6 +25,7 @@ figure{
 box-shadow:  5px 5px 10px #3f426b,
 -5px -5px 10px #a4aae4;
 display: flex;
+left: 50px;
 }
 .class_1{
     display: flex;
@@ -34,11 +35,14 @@ display: flex;
     flex: wrap;
     left: 0;
     position: sticky;
-    top: 100px;
+    top: 110px;
     bottom: 10;
     width: 260px;
-    height: 500px;
+    height: 750px;
     border-radius: 1rem;
+}
+.class_2, .class_3{
+    align-items: end;
 }
 h2{
     color: var(--bgbox);
